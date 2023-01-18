@@ -32,7 +32,7 @@ def predict():
 
     prediction = model.predict(single_pred)
 
-    return jsonify(f"{str(prediction.item().title())} are recommended by the A.I for your farm.")
+    return jsonify({'prediction':f"{str(prediction.item().title())} are recommended by the A.I for your farm."})
 
 if __name__ == '__main__':
     app.run(debug=True)
