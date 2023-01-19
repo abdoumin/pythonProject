@@ -1,9 +1,9 @@
 from flask import Flask,request,jsonify
 import numpy as np
 import pickle
-import streamlit as st
-import pandas as pd
-from sklearn.utils import resample
+# import streamlit as st
+# import pandas as pd
+# from sklearn.utils import resample
 
 model = pickle.load(open('model.pkl','rb'))
 
